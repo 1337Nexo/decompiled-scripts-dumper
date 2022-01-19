@@ -1,5 +1,7 @@
-import re
+import re, sys
 
+sys.stdout = open('decompiled-scripts-dumper.log', 'w')
+        
 def del_chars(string, b, e):
     begin = string[:b]
     end = string[e+1:]

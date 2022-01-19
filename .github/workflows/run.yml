@@ -24,4 +24,11 @@ jobs:
       with:
         python-version: '3.x'
     
-    - run: python dumper.py
+    - name: Run it
+      run: python dumper.py
+
+    - name: Upload log file to GitHub
+      uses: actions/upload-artifact@v2
+      with:
+        name: decompiled-scripts-dumper
+        path: decompiled-scripts-dumper.log

@@ -1,2 +1,0 @@
-py dumper.py
-PAUSE
