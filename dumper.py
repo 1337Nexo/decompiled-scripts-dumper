@@ -58,5 +58,7 @@ print_regex('player_stats', player_stats_)
 
 ballistic_equipment = dump_regex('ballistic_equipment', r'func_8\(iParam0, iParam1, -156036296, &\(Global_.*\.f_.*\), 1\);', tuneables_processing_directory )
 
+contract_value = dump_regex('contract_value', r'func_.*\(iParam0, iParam1, -2108119120, &\(Global_.*\.f_.*\), 1\);', tuneables_processing_directory )
+
 cayo_perico_team_lives_regex = r'Local_.*\.f_.*\[iVar4\] = Global_.*\.f_.*\[iVar3 .*\]\[iVar4\];'
 cayo_perico_team_lives = dump_regex('cayo_perico_team_lives', cayo_perico_team_lives_regex, fm_mission_controller_2020_directory )
